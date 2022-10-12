@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Survey form</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><u><i>Survey form</i></u></h1>
+            <p>Give the feedback of our workers in our car factory</p>
+        </div>
+    </header>
+    <main>
+        <img src="https://image.shutterstock.com/image-vector/automation-automobile-factory-concept-robot-260nw-1548501977.jpg" alt="Factory pic" width="500px">
+        <div>
+            <form action="form.php">
+                Name<br>
+                <input type="text"  placeholder="Enter your Name" id="nameid"><br>
+                Email<br>
+                <input type="email"  placeholder="Enter your email" id="emailid"><br>
+                Age<br>
+                <input type="number"  placeholder="Enter your age" id="ageid"><br>
+                Contact No.<br>
+                <input type="text" placeholder="Enter your mobile number"><br>
+
+                <p>Select your car</p>
+                <select>
+                    <option value="no-value">Select your car</option>
+                    <option value="Grand i10">Grand i10</option>
+                    <option value="Elite i20">Elite i20</option>
+                    <option value="Creta">Creta</option>
+                    <option value="Venue">Venue</option>
+                    <option value="Alcazar">Alcazar</option>
+                    <option value="Santro">Santro</option>
+                    <option value="i20">i20</option>
+                    <option value="i10">i10</option>
+                </select>
+                <p>Rate our work from range 1-5</p>
+                <label for="rangeid1">
+                    <input type="radio" value="1" name="range" id="rangeid1">
+                    1
+                </label><br>
+                <label for="rangeid2">
+                    <input type="radio" value="2" name="range" id="rangeid2">
+                    2
+                </label><br>
+                <label for="rangeid3">
+                    <input type="radio" value="3" name="range" id="rangeid3">
+                    3
+                </label><br>
+                <label for="rangeid4">
+                    <input type="radio" value="4" name="range" id="rangeid4">
+                    4
+                </label><br>
+                <label for="rangeid5">
+                    <input type="radio" value="5" name="range" id="rangeid5">
+                    5
+                </label><br>
+
+
+                <p>What Services you like?</p>
+                <input type="checkbox" name="Services" id="serviceid1">
+                <label for="serviceid1">
+                    Servicing
+                </label><br>
+                <input type="checkbox" name="Services" id="serviceid2">
+                <label for="serviceid2">
+                    Washing
+                </label><br>
+                <input type="checkbox" name="Services" id="serviceid3">
+                <label for="serviceid3">
+                    Customizing
+                </label><br>
+                <input type="checkbox" name="Services" id="serviceid4">
+                <label for="serviceid4">
+                    Denting and Painting
+                </label><br>
+
+                <p>Write here for any changes in our factory</p>
+                <textarea name="explain" id="explainid" cols="30" rows="10" placeholder="Feedback"></textarea><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&#169 Sankalp Trimade 2022. All rights reserved.</p>
+    </footer>
+</body>
+</html>
